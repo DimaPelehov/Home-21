@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 97vh;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) -140%,
+      rgba(0, 0, 0, 0.65) -9%
+    ),
+    url(image/mesmerizing-view-of-fresh-green-fields-under-a-cloudy-sky.jpg);
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  color: white;
+  border-radius: 8px;
+}
+
+.weather-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.weather-inp {
+  height: 50px;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  font-size: 18px;
+
+  &::placeholder {
+    color: white;
+  }
+}
+
+.weather-btn {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.weather_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather_main {
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.weather_main-item {
+  flex: 1 1 calc(50% - 10px);
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+.weather_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
