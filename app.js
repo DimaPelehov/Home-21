@@ -75,7 +75,7 @@ let input = document.querySelector(".weather-inp");
 
 // функція запиту на сервер
 async function getWeather(city) {
-  let weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=5d066958a60d315387d9492393935c19`;
+  let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=5d066958a60d315387d9492393935c19`;
   let response = await fetch(weatherUrl);
   let responseResult = await response.json();
   return responseResult;
